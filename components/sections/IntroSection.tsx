@@ -256,22 +256,19 @@ export default function IntroSection() {
     <section className="relative overflow-x-hidden max-w-screen min-h-[120vh] pb-[133px] bg-gradient-to-b from-black-low via-black-low to-navy-dark -mt-px">
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl">
         {/* 카드 그리드 - 여러 열로 구성 */}
-        <div className="absolute top-[-82.5px] w-full mb-[50px]">
-          {/* 중앙 정렬을 위한 flex 컨테이너 */}
-          <div className="flex justify-center">
-            {/* 카드 그리드 - 각 열에 카드들이 세로로 배치 */}
-            <div className="flex items-start">
-              {columns.map((column) => (
-                <div
-                  key={column.id}
-                  className="flex flex-col gap-[10px] items-center px-[5px] py-0"
-                >
-                  {column.cards.map((card, cardIndex) => (
-                    <Card key={cardIndex} card={card} index={cardIndex} />
-                  ))}
-                </div>
-              ))}
-            </div>
+        <div className="absolute top-[-82.5px] inset-x-0 w-full mb-[50px] flex justify-center">
+          {/* 카드 그리드 - 각 열에 카드들이 세로로 배치 */}
+          <div className="flex items-start">
+            {columns.map((column) => (
+              <div
+                key={column.id}
+                className="flex flex-col gap-[10px] items-center px-[5px] py-0"
+              >
+                {column.cards.map((card, cardIndex) => (
+                  <Card key={cardIndex} card={card} index={cardIndex} />
+                ))}
+              </div>
+            ))}
           </div>
         </div>
 
