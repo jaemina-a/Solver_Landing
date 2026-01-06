@@ -46,8 +46,8 @@ export default function BenefitsSection() {
 
   return (
     <section className="relative bg-black-low py-[40px]">
-      <div className="container mx-auto px-0">
-        <div className="flex flex-row gap-[20px] items-center justify-center">
+      <div className="container mx-auto px-5">
+        <div className="flex flex-row justify-between gap-[16px]">
           {benefits.map((benefit, index) => (
             <div
               key={benefit.id}

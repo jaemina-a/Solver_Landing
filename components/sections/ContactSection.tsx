@@ -28,6 +28,7 @@ export default function ContactSection() {
   const [selectedTools, setSelectedTools] = useState<string[]>([])
   const [submitting, setSubmitting] = useState(false)
   const [showConfirm, setShowConfirm] = useState(false)
+  const [showSuccess, setShowSuccess] = useState(false)
 
   const toggleTool = (tool: string) => {
     setSelectedTools((prev) =>
@@ -59,6 +60,8 @@ export default function ContactSection() {
       setRequirements('')
       setSelectedTools([])
       setShowConfirm(false)
+      setShowSuccess(true)
+      setTimeout(() => setShowSuccess(false), 2000)
     } catch (e) {
       console.error(e)
     } finally {
@@ -222,6 +225,15 @@ export default function ContactSection() {
                   최종 제출
                 </button>
               </div>
+            </div>
+          </div>
+        )}
+
+        {/* 제출 완료 토스트 */}
+        {showSuccess && (
+          <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50">
+            <div className="rounded-xl bg-black/80 text-white px-4 py-2 text-sm shadow-lg">
+              제출이 완료되었습니다.
             </div>
           </div>
         )}
