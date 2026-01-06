@@ -28,6 +28,14 @@ export default function IntroSection() {
           textOpacity: 0.5,
           IconFillOpacity: 0.5,
         },
+        {
+          name: '윤하린',
+          role: '세무',
+          salary: '330만원',
+          bgColor: 'rgba(225,205,118,0.2)',
+          textOpacity: 0.6,
+          IconFillOpacity: 0.6,
+        },
       ],
     },
     // 열 2
@@ -53,7 +61,14 @@ export default function IntroSection() {
           textOpacity: 0.8,
           IconFillOpacity: 0.8,
         },
-
+        {
+          name: '장민후',
+          role: '기획자',
+          salary: '360만원',
+          bgColor: 'rgba(255,205,118,0.2)',
+          textOpacity: 0.7,
+          IconFillOpacity: 0.7,
+        },
       ],
     },
     // 열 3
@@ -73,6 +88,14 @@ export default function IntroSection() {
           role: 'PM',
           salary: '280만원',
           bgColor: 'rgba(225,118,79,0.2)',
+          textOpacity: 0.8,
+          IconFillOpacity: 0.8,
+        },
+        {
+          name: '배시온',
+          role: '데이터',
+          salary: '450만원',
+          bgColor: 'rgba(70,221,255,0.2)',
           textOpacity: 0.8,
           IconFillOpacity: 0.8,
         },
@@ -98,6 +121,14 @@ export default function IntroSection() {
           bgColor: 'rgba(255, 124, 189, 0.2)',
           textOpacity: 0.8,
           IconFillOpacity: 0.8,
+        },
+        {
+          name: '고다인',
+          role: 'QA',
+          salary: '300만원',
+          bgColor: 'rgba(255,154,121,0.2)',
+          textOpacity: 0.6,
+          IconFillOpacity: 0.6,
         },
       ],
     },
@@ -128,6 +159,14 @@ export default function IntroSection() {
           textOpacity: 0.2,
           IconFillOpacity: 0.2,
         },
+        {
+          name: '임서준',
+          role: '운영',
+          salary: '340만원',
+          bgColor: 'rgba(85, 255, 119, 0.2)',
+          textOpacity: 0.6,
+          IconFillOpacity: 0.6,
+        },
       ],
     },
   ]
@@ -157,7 +196,7 @@ export default function IntroSection() {
       {/* 상단 빈 카드 (일부 카드에만) */}
       {card.hasTopCard && (
         <div
-          className="h-[68.5px] w-[87px] rounded-lg"
+          className="h-[68.5px] w-[87px] rounded-lg rounded-tl-none rounded-tr-none"
           style={{ backgroundColor: card.topCardColor }}
         />
       )}
@@ -214,10 +253,10 @@ export default function IntroSection() {
   )
 
   return (
-    <section className="relative overflow-x-hidden max-w-screen min-h-screen pb-[133px] bg-gradient-to-b from-black-low via-black-low to-navy-dark -mt-px">
+    <section className="relative overflow-x-hidden max-w-screen min-h-[120vh] pb-[133px] bg-gradient-to-b from-black-low via-black-low to-navy-dark -mt-px">
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl">
         {/* 카드 그리드 - 여러 열로 구성 */}
-        <div className="w-full mb-[50px]">
+        <div className="absolute top-[-82.5px] w-full mb-[50px]">
           {/* 중앙 정렬을 위한 flex 컨테이너 */}
           <div className="flex justify-center">
             {/* 카드 그리드 - 각 열에 카드들이 세로로 배치 */}
@@ -237,7 +276,7 @@ export default function IntroSection() {
         </div>
 
         {/* 하단 텍스트 섹션 */}
-        <div className="flex flex-col items-center gap-6">
+        <div className="flex flex-col items-center justify-center absolute inset-x-0 bottom-[140px] gap-6">
           {/* 메인 제목 */}
           <h2 className="text-h2 font-bold text-white-bone-regular text-center leading-[1.4] tracking-[-0.64px]">
             <p className="mb-0">사람 뽑는 거,</p>
