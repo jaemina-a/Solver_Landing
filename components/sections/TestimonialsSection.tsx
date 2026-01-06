@@ -85,14 +85,14 @@ export default function TestimonialsSection() {
             <div className="bg-[#d3bfae] border-[3px_3px_3px_0px] border-[#714f30] border-solid rounded-[30px] shadow-[2px_2px_4px_0px_rgba(0,0,0,0.12)] w-[270px] h-[420px] overflow-hidden relative">
 
               <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[245px] flex flex-col gap-[10px]">
-                <div className="absolute bg-[#d9d9d9] h-[364px] left-[3px] top-[3.5px] w-[245px]" />
+                <div className="absolute bg-[#d9d9d9] h-[352px] left-[3px] top-[3.5px] w-[245px]" />
 
                 <div className="bg-white flex flex-col items-start overflow-hidden rounded-[2px] shadow-[0px_25px_50px_-12px_rgba(0,0,0,0.25)] w-full relative z-10">
                   <div className="bg-white border-b border-[#2a2a2a] border-solid w-full">
                     <div className="px-[24px] py-[10px] pb-[11px]">
-                      <div className="flex flex-col items-center">
-                        <div className="text-[20px] text-black text-center tracking-[20px] leading-[45px]">
-                          <p className="font-chosun">이력서</p>
+                      <div className="flex flex-col items-center justify-center">
+                        <div className="text-[20px] text-black text-center">
+                          <p className="font-chosun">이 력 서</p>
                         </div>
                       </div>
                     </div>
@@ -122,15 +122,15 @@ export default function TestimonialsSection() {
                             </div>
                           </div>
                         </div>
-                        <div className="border-b border-[#2a2a2a] border-solid flex items-start h-[30px]">
+                        <div className="border-b  flex items-start h-[30px]">
                           <div className="bg-white border-r border-[#2a2a2a] border-solid h-full w-[60px] flex items-center justify-center relative">
                             <div className="absolute left-[calc(50%+0.5px)] top-[calc(50%+0.5px)] -translate-x-1/2 -translate-y-1/2 text-[12px] text-black text-center leading-[18px]">
-                              <p className="font-chosun">성명 </p>
+                              <p className="font-chosun">기업</p>
                             </div>
                           </div>
                           <div className="flex-1 bg-white h-full flex items-center justify-center relative">
                             <div className="absolute left-[calc(50%+0.5px)] top-[calc(50%+0.5px)] -translate-x-1/2 -translate-y-1/2 text-[12px] text-black text-center leading-none">
-                              <p className="font-chosun">와요</p>
+                              <p className="font-chosun">블랙코코넛</p>
                             </div>
                           </div>
                         </div>
